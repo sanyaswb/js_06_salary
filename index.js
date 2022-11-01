@@ -1,10 +1,10 @@
 function byModule(props) {
-	const amountSaltBeef = props.saltBeefBought * props.saltBeefPrice;
-	const amountRedRice = props.redRiceBought * props.redRicePrice;
-	const amountOldVine = props.oldVineBought * props.oldVinePrice;
-	const totalAmountProducts = amountSaltBeef + amountRedRice + amountOldVine;
-	const leftoverSalary = props.salary - totalAmountProducts;
-	const result = leftoverSalary % props.exchange;
+	const priceSaltBeef = props.saltBeefBought * props.saltBeefPrice;
+	const priceRedRice = props.redRiceBought * props.redRicePrice;
+	const priceOldVine = props.oldVineBought * props.oldVinePrice;
+	const totalPriceProducts = priceSaltBeef + priceRedRice + priceOldVine;
+	const leftOverSalary = props.salary - totalPriceProducts;
+	const result = leftOverSalary % props.exchange;
 	return result;
 }
 
